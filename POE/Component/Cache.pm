@@ -6,7 +6,7 @@ use bytes;
 
 use POE;
 
-our $VERSION = '0.1';
+our $VERSION = '0.1.1';
 
 sub new()
 {
@@ -36,7 +36,7 @@ sub new()
 		" number or a number ending in 's' or 'm'";
 	}
 
-	my $alias = delete $param{Alias};
+	my $alias = delete $params{Alias};
 
 	$alias = defined($alias) ? $alias : 'POCO::CACHE';
 	
